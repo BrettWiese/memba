@@ -1,0 +1,97 @@
+<html>
+
+	<head>
+		<title>Memba</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://use.fontawesome.com/791bbd4639.js"></script>
+	</head>
+
+	<body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"></script>
+		<script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+		<script src="js/libraries/OBJLoader.js"></script>
+		<script src="js/libraries/tone.min.js"></script>
+		<script src="js/libraries/CanvasRenderer.js"></script>
+		<script src="js/libraries/jquery-serialize.js"></script>
+		<script src="js/subscribe.js"></script>
+		<script src="js/3dsetup.js"></script>
+		<script src="js/music.js"></script>
+		<script src="js/app.js"></script>
+		<div class="iphone__notification" onClick="enableIphoneSound()">
+			<button class="notification"> Click here to enable sound </button	>
+		</div>
+		<button class="sound sound--on" onClick="toggleSound()">
+			<i class="fa fa-volume-up" aria-hidden="true"></i>
+		</button>
+
+		<div class="contact">
+			<form class="contact__form" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScToHKiPnQHW3JPUyNJs_68emn6q87abMkh3ozmVT5HnDaPeA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+				<input class="contact__form-input" type="text" name="entry.1264885708" id="entry.1264885708" placeholder="Email"><br>
+				<input class="contact__form-button" type="submit" value="Subscribe">
+			</form>
+			<div class="contact__text"> Be the first to receive new releases </div>
+		</div>
+		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+		<div class="nav">
+			<nav class="nav__left">
+				<ul class="nav__list">
+					<li class= "nav__item">
+						<a class="nav__link" href="https://www.instagram.com/memba.music/" target="blank">
+							<span>Merch</span><span class="nav__sub-link">coming soon<span>
+						</a>
+					</li>
+					<li class= "nav__item">
+						<a class="nav__link" href="mailto:memba.music@gmail.com,ethan@knctrn.com,aqib@elysianrecords.com" target="blank">
+							Contact
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+
+
+			<nav class="nav__right">
+				<ul class="nav__list">
+					<li class= "nav__item">
+						<a class="nav__link" href="https://www.instagram.com/memba.music/" target="blank">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						 </a>
+					</li>
+					<li class= "nav__item">
+						<a class="nav__link" href="https://www.facebook.com/membaofficial" target="blank">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class= "nav__item">
+						<a class="nav__link" href="https://www.youtube.com/channel/UCpKn6wZ2UWZCrd7ppG9lZig" target="blank">
+							<i class="fa fa-youtube" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class= "nav__item">
+						<a class="nav__link" href="https://soundcloud.com/memba" target="blank">
+							<i class="fa fa-soundcloud" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class= "nav__item">
+						<a class="nav__link" href="https://open.spotify.com/artist/7nJNuftnqwrFGFs3ZRRe0u" target="blank">
+							<i class="fa fa-spotify" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class= "nav__item">
+						<a class="nav__link" href="https://twitter.com/membamusic" target="blank">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+
+	</body>
+
+</html>
